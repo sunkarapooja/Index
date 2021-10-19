@@ -1,0 +1,21 @@
+Hi NN 
+I am working on code execution on my system
+I am able to run the code but can't run some code module in my system
+for I need GPU access 
+for create training data and model training
+I have asked the access of GPU when I will get access then I will workon that
+
+I have some ideas like using Wordembeding techniques 
+For that I need GPU I will check with chandra for GPU info
+I will work on those as well as parallely I will work on fine tuning on current model
+in current model 
+
+I went throug the code missing some data preprocessing 
+and kartheek showed problem usecases currently we are focusing on usecases in current model
+
+
+
+
+
+
+

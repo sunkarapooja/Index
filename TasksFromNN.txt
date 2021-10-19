@@ -1,0 +1,16 @@
+*** Indexing Automation
+*** Thursday meeting
+
+-->What we did in indexing automation
+
+--> Why did ??
+--> How did ??
+
+--> Indexing Curation
+-->Run the code in local env
+-->Coming up with your recommendations
+-->Reinforcement Learning with NLP what they did ???
+-->MLOPS
+
+
+--> MLOPS pipeline want to see

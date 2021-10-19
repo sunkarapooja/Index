@@ -1,0 +1,83 @@
+Automation KT-1:
+*****************
+The major part is Indexing Automation totall we have 20 different projects are there
+based on client requirement set
+Indexing is nothing but identifing biological keywords from data
+In indexing automation main
+--Cursory indexing
+--Chinese indexing
+--Main part indexing
+--PAC
+--Bio indexing
+Other usecases:
+DD-CCD - drug discovery-clinical canicade discovery
+** MLOPS client neveqr expose there data so  we have to fetch data from on primise local servers
+MLOPS success for one pipe line
+** Generate model app services
+**Cursory and Bio indexing seems like same
+
+Concept:
+********52
+** we are getting batches from clients those are called shipments each shipmet contains TAN's
+means PDF files those are called sections
+** As of now they have 17 ccombination of sections
+** Curasation done based on sections
+
+** They have used Spacy NER for Keyword extraction getting 52% accuracy but I have to
+check technical prospective how they done and how it was working and all
+** 
+
+Cursory Indexing:
+****************
+* In the cursory indexing we need to extract keywords from title and abstract 
+* In the curator manual tool we can able to see shipment,tan's and selction wise along with xml
+file) - sairam is the person to explain manual tool
+* As of now models are running section wise and generated API with request of section number and inputdata
+
+Q) I have asked question why those many models why not one model for all sections
+A) He expained about domain specific word terminology each section terms shouldn't match 
+with other sections means relation is not matched so they did section wise model training
+
+Q) I have asked about topic modeling
+so they are getting sorted documents they no need to use topic modeling
+
+Automation kt-2:
+***************
+** Curators data saving in plsql  like shpiment,sections and keywords
+call plsql db and get all section related words irrespective with tan's and sections
+taking complete keywords from each and ever section
+
+** collecting shipments from internal resources
+** Extract keywords each and every phara and tagging
+** tagged dataset used for trained model
+** After trained model API intergrated with manual tool
+** curator tool highlight the keywords in the document if any thing is worng curatoros delete
+and edit the predicted keywords
+** Lookup services client sending API call along with keyword that keyword fetching and saving into database
+In lookup servce
+** PAR has unique reg number
+** CTH has unique AFK number
+about look up service should connect with sairam.
+
+Will increase accuracy:
+*********************
+Incomplete annotations
+noisy annatations
+unpredicted keywords
+
+Feedback system:
+****************
+predicted word are deleted and reinset with changed words
+
+here we can apply RL with NLP
+
+
+
+Automation KT -3
+****************
+Explained Coding piplines
+of bio indexing and cursory indexing highlevel and API calls
+
+
+They have created tagging for data creation
+insteted of that we can create data annotations

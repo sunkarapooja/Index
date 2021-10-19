@@ -1,0 +1,12 @@
+Text filtering 
+Spacy-NER (blank)hyper parameter tuning
+https://spacy.io/api use of this models for spacy ner
+BERT
+BILSTM
+
+
+
+
+
+article Classification
+

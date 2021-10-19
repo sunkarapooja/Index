@@ -1,0 +1,74 @@
+def rotate_matrix(matrix):
+    '''rotates a matrix 90 degrees clockwise'''
+    n = len(matrix)
+    for layer in range(n // 2):
+        first, last = layer, n - layer - 1
+        for i in range(first, last):
+            # save top
+            top = matrix[layer][i]
+
+            # left -> top
+            matrix[layer][i] = matrix[-i - 1][layer]
+
+            # bottom -> left
+            matrix[-i - 1][layer] = matrix[-layer - 1][-i - 1]
+
+            # right -> bottom
+            matrix[-layer - 1][-i - 1] = matrix[i][- layer - 1]
+
+            # top -> right
+            matrix[i][- layer - 1] = top
+    return matrix
+
+
+def string_rotation(s1, s2):
+    if len(s1) == len(s2) != 0:
+        return is_substring(s1 + s1, s2)
+    return False
+
+
+def string_compression(string):
+    compressed = []
+    counter = 0
+
+    for i in range(len(string)):
+        if i != 0 and string[i] != string[i - 1]:
+            compressed.append(string[i - 1] + str(counter))
+            counter = 0
+        counter += 1
+
+    # add last repeated character
+    compressed.append(string[-1] + str(counter))
+
+    # returns original string if compressed string isn't smaller
+    return min(string, ''.join(compressed), key=len)
+
+def pal_perm(phrase):
+    '''function checks if a string is a permutation of a palindrome or not'''
+    table = [0 for _ in range(ord('z') - ord('a') + 1)]
+    countodd = 0
+    for c in phrase:
+        x = char_number(c)
+        if x != -1:
+            table[x] += 1
+            if table[x] % 2:
+                countodd += 1
+            else:
+                countodd -= 1
+
+    return countodd <= 1
+
+def char_number(c):
+    a = ord('a')
+    z = ord('z')
+    A = ord('A')
+    Z = ord('Z')
+    val = ord(c)
+
+    if a <= val <= z:
+        return val - a
+    elif A <= val <= Z:
+        return val - A
+    return -1
+
+

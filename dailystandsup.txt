@@ -1,0 +1,33 @@
+Scibase -genrals and paytms
+ DCM - Drugs
+climform - indication (xlsx to xlsx)
+
+
+->jmbo50spI am comparision models 
+current model is spacy ner 
+so we have huge amount of data I am checking spacy ner really fit or not
+other wise we have to choose alternative things
+
+5 data engineer
+deeps profiles -gsk
+
+Tech@#0920
+
+nexan curation 
+1 - > stopgap solution
+2 - > 
+
+I am working model comparision NN 
+I have applied preprocessing steps on current model checked with kartheek for 
+what we need inthe data so every word and character important he said
+so preprocessing not sutable for this data whatever they have done is fine basically
+model giving 40 percent accuracy and they did preprocessing on prediction data 
+and checking comparision on prediction actual data then only they got 52 accuracy
+
+I am checking different models like bilstm,bert,allennlp,deepvlov 
+but we need dataset we have data but we don't have dataset as per last discussion
+we need annotated data i am checking kartheek and sunil on that
+
+mean while we have biobert model developed by dims labs
+this model trained with 18millian bioinformatic pubmed articles 
+we have model weights so I want to check with our test data 

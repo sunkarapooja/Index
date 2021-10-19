@@ -1,0 +1,55 @@
+Hi every one Today I would like to explain overview of my understanding on automation kt
+The major concept is Indexing automation.
+Indexing automation is nothing but identifying biologiccal keywords from data. based on indexing
+automation excelra has 20 type of different projects.
+in indexing automation main parts are 
+cursory indexing 
+chinese indexing
+main point indexing
+PAC
+Bio indexing
+Concept of indexing automation
+** We are getting batches from clients those are called shipments each shipment contains 
+sections each section has multiple TAN's 
+** As of now they have 17 combination of sections here curation done based on sections
+** PAR,ROL and CTH are labels  we should  extract those labels from text data.
+ example : pooja,deepika these are names so model will predict person
+hyderbad,mumbai,chennai these are locations so model will predict location here labels are 
+person,location that's I have mentioned PAR,ROL these are labels
+Cursory Indexing:
+In the cursory indexing we need to extract entities from title and abstract
+** creating training data using PAR tagging by using curator datalist(we should focus on datapreparation)
+** So here team implemented pre trained spacyner model and they got 52% accuracy
+** After training model integrated with Curator tool by using Flask API
+** In the curator tool highlights the PAR,ROL&CTH in the document if any wrong prediction curators changing the term.
+(we should avoid manual interption)
+** For finding better dataset they have approaches to lookup services here client sending
+api call to some production along PAR and CTH those have unique numbers called reg and AFK.
+
+explained code pipelines
+
+
+As per my understanding we should take back step on dataset creation and preprocessing part
+model selection 
+so I am recommending these approaches
+
+*** As per my underanding here data annotation is missing just they have mapped with curator datalist
+applying some tags
+
+Data annotation is one of the key point for improving  model accuracy. We can annotate the data from our dataset and apply to existing  Spacy NER model it will be used for increasing  the model accuracy.
+For data annotation we have many open source annotation tools.  “prodigy” is one of the main tool and  Tagtog lighttag , bioportal so on.
+
+*** here using pretrained spacy ner model that model train with general english dataset
+but our dataset is completly different it contains biological keywords those might not match with english termas
+
+so here we can create our own corpus based on data annotation and build custom model by using core nlp and advanced nlp techniqes
+ontop of that we can apply different pretrained models
+
+*** Spacy has  lot of API's for data preprocessing so we should understands our requirement and check with spacy models
+
+as of now I can recommend these concepts. At the time of development defenetly we will face diffculties and get more ideas
+
+
+
+
+ 

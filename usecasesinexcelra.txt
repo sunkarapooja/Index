@@ -1,0 +1,48 @@
+NN,Ravi
+-->SPacy-NER (without annotation model -40%)
+-->spacy-ner (with annotation need dataset)[checked with sairam]
+
+Bert - [BIO tagging]
+bert- [pumbed dataset][training]
+biobert[infernce part] *** 
+
+
+Database
+select title,abstract,tan from table where sectionnumber==1;
+iterastions = 25(12hours) 
+spacy-ner - single layer,bloom enbeddings
+json format
+
+
+
+
+
+
+-- Accuracy - scapy result - actu 
+-- 100 - records(2days) (curator taking two kind data with same meaning)
+
+-- background work on predicted data 
+
+
+Hi every one this is pooja  I am a datascientist 
+I have 4 years exp in AIML worked on many pro
+
+indexing automation 
+all indexing documentation classification - classify section,subsection,crassreference
+TMD - Text summarization(automation)
+article classification - Keywords(key) - most import words from data(gensim)
+ROL - classification (51 labels)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
